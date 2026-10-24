@@ -1,0 +1,347 @@
+local iI1lLlLOoIj0l=(getfenv and getfenv(1)) or _ENV or _G
+local IOLLILOIOlOi1,L1iijil=string.byte,string.char
+local function jOo0Oii(ijIijo1IioI,llliOlIoji)
+local ioIj0j=""
+local lLj1Lil=#llliOlIoji
+for I0jOijjlI1llj=1,#ijIijo1IioI do ioIj0j=ioIj0j..L1iijil((IOLLILOIOlOi1(ijIijo1IioI,I0jOijjlI1llj)-IOLLILOIOlOi1(llliOlIoji,(I0jOijjlI1llj-1)%lLj1Lil+1))%256) end
+return ioIj0j
+end
+local lil0I0=iI1lLlLOoIj0l[jOo0Oii("\2018\139n\185G","V\211\031\009")]
+local jj11j00oIoLoio=iI1lLlLOoIj0l[jOo0Oii("\021\210\019\028<\130","\162^\161\179\206\027&")][jOo0Oii("\n\174\148","\15192\254\024d")]
+local IiO1j001011i=iI1lLlLOoIj0l[jOo0Oii("\153\023W\216\138","%\182\245l")][jOo0Oii("\236\171\236lE\155","\137<~\009\228'")]
+local loIOOj0=iI1lLlLOoIj0l[jOo0Oii(",]\142s","\191\252\026\011\008\200")][jOo0Oii("\008cZ\017i","\162\247\235")]
+local l0lL1jLjLLo=iI1lLlLOoIj0l[jOo0Oii("TW\212\000MJ\203\253","\224\232f\139")]
+local II1iLOL1iIO=iI1lLlLOoIj0l[jOo0Oii("\002\233\243\151\234","\157w\129(xf")]
+local iO1oOl0i0l=iI1lLlLOoIj0l[jOo0Oii("\195\188\255\180","OC\143")]
+local iljoOIljL=iI1lLlLOoIj0l[jOo0Oii("B@\199\000\146\179\000O<\181\255\146","\219\219S\147-?\159")]
+local I0ioO1OOl=iI1lLlLOoIj0l[jOo0Oii("\233\168\175X\249\235","wG8\241\148w")]
+local I1010lo=iI1lLlLOoIj0l[jOo0Oii("I\132\226\154","\219\031j&\018\197")]
+local jLo0IijoO0,lj0jjlljLOjo0j,LOOLO00i1j,lOojlo100=jOo0Oii("\180yY\217\145","@\024\247m,"),jOo0Oii("\1432\2096=\146,\209",")\189c\211\201"),jOo0Oii("0@\"!V^","\209\225\185\173\241\236"),jOo0Oii("}\218\r)\138[","\030{\170\200\030\239")
+local lLL1O0ii=IOLLILOIOlOi1("c")+(L1iijil(82,67)=="RC" and 4610 or 85)+l0lL1jLjLLo("701")*5+lil0I0("#",0,0,0)*7
+local Lj01oI1oLOiOjI=iI1lLlLOoIj0l[jOo0Oii("\025\204C\017\208","\165k\225")][jOo0Oii("\131)\2392","\019\200\140\199\017")] or function(...) return {n=lil0I0("#",...),...} end
+local iiooLiOjj=iI1lLlLOoIj0l[jOo0Oii("\217\152\181\231\205","e7S{hH")][jOo0Oii("\190\249\223\238\172\246","I\139o\141")] or iI1lLlLOoIj0l[jOo0Oii("'\127\168\199\1398","\178\0178f(\205}")]
+local jLiiIoIi1l0I="AZ5aEdKYwDsz2mV7hCGgMb9yR4NjSIHOe3nBTfc+rLl0W86q1vpUx/uiXQtoFJPk"
+local function Lio1j1oljIl1I(liL1i00LoI)
+local Ll0I0L1lI={}
+for IILoj0l0=1,64 do Ll0I0L1lI[IOLLILOIOlOi1(jLiiIoIi1l0I,IILoj0l0)]=IILoj0l0-1 end
+local j1oIloO1jj,IlojLO1iOlLoLI,j0IoOIl11,l10LLIooio0={},0,0,0
+for IILoj0l0=1,#liL1i00LoI do
+local ijOlll1Ioj1o=Ll0I0L1lI[IOLLILOIOlOi1(liL1i00LoI,IILoj0l0)]
+if ijOlll1Ioj1o then
+IlojLO1iOlLoLI=IlojLO1iOlLoLI*64+ijOlll1Ioj1o
+j0IoOIl11=j0IoOIl11+6
+if j0IoOIl11>=8 then j0IoOIl11=j0IoOIl11-8 l10LLIooio0=l10LLIooio0+1 j1oIloO1jj[l10LLIooio0]=L1iijil(loIOOj0(IlojLO1iOlLoLI/(2^j0IoOIl11))%256) IlojLO1iOlLoLI=IlojLO1iOlLoLI%(2^j0IoOIl11) end
+end
+end
+return IiO1j001011i(j1oIloO1jj)
+end
+local iooLojj="v4eGiEDpPa6oc3AAO5rf2f3CetQtzRx7yLfuY71dcdOqQ6WzTfsV20ZheWZpixiilLuByyrV+Zpa/VLh5eSXjvB13Yg4Ot6IOzsvikMuwFeUKB3BB2N27fE+5Vu1SCLxAyI5wqzOECBt+k/SAXBbfIK3XW2KUrWh94tv26mFUvH8gMnYpN1d66le1Ze6jKKYpCJlXfgwQi+LX/273AVuF232tJZxLqQEPZp0R9/CKJ8gVpI4I4efNAAWWHTga3U5ssbpGehEmApBmMYe1j9Bwp3hfweBheWud3IPDpBJJxqh5fpZPWMmlQxhKC6BVNfwdVY71o6ZXCiNHs4zaWwExUin0qKF+B6FmjNiuhvEnguxOgH0WETW2Qs/mJOt3o+Y97+h+CxFY4bbFZQSxFjca+Pb1tAhlHc38jnpfx8bt2Y3s3sgijiys2+aHLtFhzWKb3M3Uv+q6vAqOdebT4FqGdVr9zAPkgbEcvSLzyFV5k1ttsnMXMPHbdQ9Jvh7MWcMwM8oWnuZwYiJfbjTFLBas8Xa6CdCqfn2H+l/JbUVsezlfvMUmTH2/unnaEWYwttEnRLzm6gdPlVOw+uNLi2IchpDjZpzXkRaO0AwuG6mTKXx4dd49CcZUIXhan4ffmU/sXB9FFZSXeUGbyiWzjn6dTxDHFwyeUFJUEUhRCgX96f68fW3Xm2myOyUWymKEnKcXNcxgBFSEbIxriqy0x9Qlj5GtIKMC+4S/tQqI98HymrWPUnSfmESLej4dRKHhjHnU6ymspiwR8MzwmyZ1tqQbmXFttxdhOmpj646Iw+Tk8aMpEcWq7PZSGNY66IGMsqwsuiFcffARR6AVjt4BrogvL0mGyoZjoMtJ3O/zYS/BWjqKhvdvrwHdvzl4DQGJnJ+j7dshLM5H501KmhWDozDS3ucLkGfFJ8XEe5WRdr0U+NopjDIJ+2MfF/Ah3DHm18hSFj7bLrAZMFKrPbaCXNCESGBebMKz1RDpVZH7IW7d3TVsNilI9D2Zl/EWA2kdh/TGxlbL/sb1hKF/AJ4g1GIk1avhAaHN7kUMujbF6aD5rNa28TNCoFGTyZmddjtmiWIY5VW/bZhdY04Dus7u8t9rBN4Ed5VGBdbpyqQ9r87RIHsnnyjQSVW1RX0bj3SQnW/WwCtaqvIJ9J4mQXjbC30Xmyva+hdzzeXZFgv+UP8fzGxXsUe06fBqiFm+shFKsr5HHR="
+local jLLLLii0O=Lio1j1oljIl1I(iooLojj)
+iooLojj=nil
+if #jLLLLii0O~=914 then II1iLOL1iIO("VM integrity check failed",0) end
+local function I1ilil()
+local LOjolIo00iii=(1647456017)+lLL1O0ii
+local l1ioj1IOo=51
+local ililloO0=0
+return function()
+ililloO0=ililloO0+1
+LOjolIo00iii=(LOjolIo00iii*45573+3774654325)%4294967296
+local jj0IoLloIol0lI=IOLLILOIOlOi1(jLLLLii0O,ililloO0)
+local Ll11o1=(loIOOj0(LOjolIo00iii/65536)+l1ioj1IOo+(ililloO0-1)*72)%256
+local lllIL1jiLl0=(jj0IoLloIol0lI-Ll11o1)%256
+l1ioj1IOo=(l1ioj1IOo*61+jj0IoLloIol0lI+1)%251
+return lllIL1jiLl0
+end
+end
+local ili0I1j1=I1ilil()
+local LoI0ijIjl,jOlIll11l=1,0
+for l0l1ioLli0L=1,#jLLLLii0O do
+local lllIL1jiLl0=ili0I1j1()
+LoI0ijIjl=(LoI0ijIjl*257+lllIL1jiLl0+1)%4294967291
+jOlIll11l=(jOlIll11l*65599+lllIL1jiLl0+1)%4294967279
+end
+if LoI0ijIjl~=3600142569 or jOlIll11l~=4292236448 then II1iLOL1iIO("VM integrity check failed",0) end
+ili0I1j1=I1ilil()
+local ililloO0=1
+local function iL0LLoL1(l0l1ioLli0L)
+if l0l1ioLli0L<0 or ililloO0+l0l1ioLli0L-1>#jLLLLii0O then II1iLOL1iIO("VM payload is truncated",0) end
+end
+local function jlIIiILlLOLjL1()
+iL0LLoL1(1)
+local l0l1ioLli0L=ili0I1j1()
+ililloO0=ililloO0+1
+return l0l1ioLli0L
+end
+local function IOloLl1LLI()
+iL0LLoL1(2)
+local l0l1ioLli0L=ili0I1j1()
+local lllIL1jiLl0=ili0I1j1()
+ililloO0=ililloO0+2
+return l0l1ioLli0L+lllIL1jiLl0*256
+end
+local function ijlOjILLL()
+iL0LLoL1(4)
+local l0l1ioLli0L=ili0I1j1()
+local lllIL1jiLl0=ili0I1j1()
+local jj0IoLloIol0lI=ili0I1j1()
+local jLi1I0o110=ili0I1j1()
+ililloO0=ililloO0+4
+return l0l1ioLli0L+lllIL1jiLl0*256+jj0IoLloIol0lI*65536+jLi1I0o110*16777216
+end
+local function lO0OI0o()
+local l0l1ioLli0L=ijlOjILLL()
+iL0LLoL1(l0l1ioLli0L)
+local lllIL1jiLl0={}
+for jj0IoLloIol0lI=1,l0l1ioLli0L do lllIL1jiLl0[jj0IoLloIol0lI]=L1iijil(ili0I1j1()) end
+ililloO0=ililloO0+l0l1ioLli0L
+return IiO1j001011i(lllIL1jiLl0)
+end
+local function LoiOOl1O1jIi()
+local l0l1ioLli0L=jlIIiILlLOLjL1()
+local lllIL1jiLl0=lO0OI0o()
+if l0l1ioLli0L==0 then return l0lL1jLjLLo(lllIL1jiLl0)
+elseif l0l1ioLli0L==1 then return lllIL1jiLl0
+elseif l0l1ioLli0L==2 then return 1/0
+elseif l0l1ioLli0L==3 then return -1/0
+else return 0/0 end
+end
+local function IIoOoo0L00j1(jIOIj1i1i)
+if jIOIj1i1i>200 then II1iLOL1iIO("VM function nesting limit exceeded",0) end
+local ii11iLOji=jlIIiILlLOLjL1()
+local l0l1ioLli0L=jlIIiILlLOLjL1()
+if l0l1ioLli0L>1 then II1iLOL1iIO("VM invalid function flags",0) end
+local IiLjO0Lo=ijlOjILLL()
+local LOIloji0OLoIiL=IiLjO0Lo%65536
+local lllIL1jiLl0=IOloLl1LLI()
+local lii0OiOioO1={}
+for jj0IoLloIol0lI=1,lllIL1jiLl0 do local I001LlLlo0jo=IOloLl1LLI() lii0OiOioO1[jj0IoLloIol0lI]={I001LlLlo0jo,lO0OI0o()} end
+local jLi1I0o110=ijlOjILLL()
+iL0LLoL1(jLi1I0o110*12)
+local lioiIjll1i={}
+for jj0IoLloIol0lI=1,jLi1I0o110 do
+lioiIjll1i[jj0IoLloIol0lI]={IOloLl1LLI(),IOloLl1LLI(),ijlOjILLL(),ijlOjILLL()}
+for j0L1lOOlo000=1,4 do LOIloji0OLoIiL=(LOIloji0OLoIiL*131+lioiIjll1i[jj0IoLloIol0lI][j0L1lOOlo000]%65536+j0L1lOOlo000)%65536 end
+end
+local ililloO0=IOloLl1LLI()
+local iloIi1O={}
+for jj0IoLloIol0lI=1,ililloO0 do iloIi1O[jj0IoLloIol0lI]=IIoOoo0L00j1(jIOIj1i1i+1) end
+local lILi1IilOool=IOloLl1LLI()
+local liOLI11={}
+for jj0IoLloIol0lI=1,lILi1IilOool do liOLI11[jj0IoLloIol0lI]={jlIIiILlLOLjL1(),IOloLl1LLI()} end
+return {ii11iLOji,l0l1ioLli0L,lioiIjll1i,lii0OiOioO1,iloIi1O,liOLI11,{},IiLjO0Lo,(lLL1O0ii+61575+LOIloji0OLoIiL)%65536}
+end
+local function L01jLI1L10(llIooloOO0IILj,iOiojjoi,I001LlLlo0jo,LOoIijIi)
+if iOiojjoi[I001LlLlo0jo]~=nil then return iOiojjoi[I001LlLlo0jo] end
+local liL1i00LoI=llIooloOO0IILj[I001LlLlo0jo]
+local Ll0I0L1lI=liL1i00LoI[1]
+local IILoj0l0=liL1i00LoI[2]
+local j1oIloO1jj=(LOoIijIi+Ll0I0L1lI*251+1)%65536
+local IlojLO1iOlLoLI={}
+for j0IoOIl11=1,#IILoj0l0 do
+j1oIloO1jj=(j1oIloO1jj*40503+12345)%65536
+IlojLO1iOlLoLI[j0IoOIl11]=L1iijil((IOLLILOIOlOi1(IILoj0l0,j0IoOIl11)-loIOOj0(j1oIloO1jj/256)%256-j0IoOIl11*(LOoIijIi%256))%256)
+end
+local l10LLIooio0=IiO1j001011i(IlojLO1iOlLoLI)
+if #l10LLIooio0<5 then II1iLOL1iIO("VM invalid constant",0) end
+local ijOlll1Ioj1o=IOLLILOIOlOi1(l10LLIooio0,1)
+local I0llL1j=IOLLILOIOlOi1(l10LLIooio0,2)+IOLLILOIOlOi1(l10LLIooio0,3)*256+IOLLILOIOlOi1(l10LLIooio0,4)*65536+IOLLILOIOlOi1(l10LLIooio0,5)*16777216
+if I0llL1j~=#l10LLIooio0-5 or ijOlll1Ioj1o>4 then II1iLOL1iIO("VM invalid constant",0) end
+local i1j011j=jj11j00oIoLoio(l10LLIooio0,6,5+I0llL1j)
+local Liio0LjlIl
+if ijOlll1Ioj1o==0 then Liio0LjlIl=l0lL1jLjLLo(i1j011j) elseif ijOlll1Ioj1o==1 then Liio0LjlIl=i1j011j elseif ijOlll1Ioj1o==2 then Liio0LjlIl=1/0 elseif ijOlll1Ioj1o==3 then Liio0LjlIl=-1/0 else Liio0LjlIl=0/0 end
+iOiojjoi[I001LlLlo0jo]=Liio0LjlIl
+return Liio0LjlIl
+end
+local iOIlo0I0Ooji={}
+local LO1oo0jL1=IOloLl1LLI()
+for iO1Lo1lOlIiI=1,LO1oo0jL1 do local l0l1ioLli0L=IOloLl1LLI() local lllIL1jiLl0=IOloLl1LLI() iOIlo0I0Ooji[l0l1ioLli0L]=lllIL1jiLl0 end
+local lo1Ijo10=IIoOoo0L00j1(0)
+if ililloO0~=#jLLLLii0O+1 then II1iLOL1iIO("VM trailing payload data",0) end
+jLLLLii0O=nil
+ili0I1j1=nil
+local LIi110ll0li
+local function ji1jLO(lo1Ijo10,liOLI11)
+return function(...) return LIi110ll0li(lo1Ijo10,liOLI11,Lj01oI1oLOiOjI(...)) end
+end
+LIi110ll0li=function(lo1Ijo10,liOLI11,jIoloLj00)
+local LjlllljL={}
+local I0il0Ii0li=0
+local ii11iLOji=lo1Ijo10[1]
+local lILiI1ljlI=jIoloLj00.n
+for l0l1ioLli0L=1,ii11iLOji do LjlllljL[l0l1ioLli0L-1]=jIoloLj00[l0l1ioLli0L] end
+local l0i0ILil,l00LjjOIlOoo={},0
+if lo1Ijo10[2]==1 then l00LjjOIlOoo=lILiI1ljlI-ii11iLOji; if l00LjjOIlOoo<0 then l00LjjOIlOoo=0 end; for l0l1ioLli0L=1,l00LjjOIlOoo do l0i0ILil[l0l1ioLli0L]=jIoloLj00[ii11iLOji+l0l1ioLli0L] end end
+local lioiIjll1i,lii0OiOioO1,iloIi1O=lo1Ijo10[3],lo1Ijo10[4],lo1Ijo10[5]
+local llI1iL1OL=lo1Ijo10[7]
+local LI1Ojoj=1
+local lILi1IilOool=0
+while true do
+local j1jllI=lioiIjll1i[LI1Ojoj]
+if j1jllI==nil then II1iLOL1iIO("VM invalid instruction address",0) end
+local L0Ll1o1iL=(lo1Ijo10[8]+LI1Ojoj*65599)%4294967296
+LI1Ojoj=LI1Ojoj+1
+L0Ll1o1iL=(L0Ll1o1iL*1664525+1013904223)%4294967296
+local jojOjIi=(j1jllI[2]-L0Ll1o1iL)%65536
+L0Ll1o1iL=(L0Ll1o1iL*1664525+1013904223)%4294967296
+local l0l1ioLli0L=(j1jllI[1]-L0Ll1o1iL)%65536
+L0Ll1o1iL=(L0Ll1o1iL*1664525+1013904223)%4294967296
+local lllIL1jiLl0=(j1jllI[4]-L0Ll1o1iL)%4294967296
+L0Ll1o1iL=(L0Ll1o1iL*1664525+1013904223)%4294967296
+local jj0IoLloIol0lI=(j1jllI[3]-L0Ll1o1iL)%4294967296
+local jLi1I0o110=iOIlo0I0Ooji[jojOjIi]
+if (jLi1I0o110*jLi1I0o110)%4==2 then I0il0Ii0li=I0il0Ii0li+7 end
+if (LI1Ojoj%2)*(LI1Ojoj%2)-(LI1Ojoj%2)~=0 then I0il0Ii0li=I0il0Ii0li+7 end
+if jLi1I0o110==31 then
+LjlllljL[l0l1ioLli0L]=LjlllljL[lllIL1jiLl0]+LjlllljL[jj0IoLloIol0lI]
+elseif jLi1I0o110==6 then
+LjlllljL[l0l1ioLli0L]=(LjlllljL[lllIL1jiLl0]<LjlllljL[jj0IoLloIol0lI])
+elseif jLi1I0o110==37 then
+I0il0Ii0li=(I0il0Ii0li+lllIL1jiLl0)%(jj0IoLloIol0lI+1)
+elseif jLi1I0o110==33 then
+local liL1i00LoI,Ll0I0L1lI=LjlllljL[lllIL1jiLl0],LjlllljL[jj0IoLloIol0lI];LjlllljL[l0l1ioLli0L]=(liL1i00LoI>=Ll0I0L1lI)
+elseif jLi1I0o110==22 then
+local liL1i00LoI,Ll0I0L1lI=LjlllljL[lllIL1jiLl0],LjlllljL[jj0IoLloIol0lI];LjlllljL[l0l1ioLli0L]=liL1i00LoI%Ll0I0L1lI
+elseif jLi1I0o110==26 then
+LjlllljL[l0l1ioLli0L]=(lllIL1jiLl0~=0)
+elseif jLi1I0o110==4 then
+LjlllljL[l0l1ioLli0L]=iI1lLlLOoIj0l[L01jLI1L10(lii0OiOioO1,llI1iL1OL,lllIL1jiLl0+1,lo1Ijo10[9])]
+elseif jLi1I0o110==24 then
+if lllIL1jiLl0==0 then
+for liL1i00LoI=1,l00LjjOIlOoo do LjlllljL[l0l1ioLli0L+liL1i00LoI-1]=l0i0ILil[liL1i00LoI] end
+lILi1IilOool=l0l1ioLli0L+l00LjjOIlOoo
+else
+for liL1i00LoI=1,lllIL1jiLl0-1 do LjlllljL[l0l1ioLli0L+liL1i00LoI-1]=l0i0ILil[liL1i00LoI] end
+end
+elseif jLi1I0o110==35 then
+liOLI11[lllIL1jiLl0+1][1]=LjlllljL[l0l1ioLli0L]
+elseif jLi1I0o110==38 then
+LjlllljL[l0l1ioLli0L]=-LjlllljL[lllIL1jiLl0]
+elseif jLi1I0o110==10 then
+local IILoj0l0
+if lllIL1jiLl0==0 then IILoj0l0=lILi1IilOool-l0l1ioLli0L else IILoj0l0=lllIL1jiLl0-1 end
+local j1oIloO1jj={}
+for liL1i00LoI=1,IILoj0l0 do j1oIloO1jj[liL1i00LoI]=LjlllljL[l0l1ioLli0L+liL1i00LoI-1] end
+return iiooLiOjj(j1oIloO1jj,1,IILoj0l0)
+elseif jLi1I0o110==16 then
+LjlllljL[lllIL1jiLl0][1]=LjlllljL[l0l1ioLli0L]
+elseif jLi1I0o110==3 then
+LjlllljL[l0l1ioLli0L]=(LjlllljL[lllIL1jiLl0]<=LjlllljL[jj0IoLloIol0lI])
+elseif jLi1I0o110==5 then
+if (not not LjlllljL[l0l1ioLli0L])==(lllIL1jiLl0~=0) then LI1Ojoj=jj0IoLloIol0lI+1 end
+elseif jLi1I0o110==29 then
+LI1Ojoj=lllIL1jiLl0+1
+elseif jLi1I0o110==23 then
+LjlllljL[l0l1ioLli0L]=not LjlllljL[lllIL1jiLl0]
+elseif jLi1I0o110==12 then
+iI1lLlLOoIj0l[L01jLI1L10(lii0OiOioO1,llI1iL1OL,lllIL1jiLl0+1,lo1Ijo10[9])]=LjlllljL[l0l1ioLli0L]
+elseif jLi1I0o110==42 then
+LjlllljL[l0l1ioLli0L]=(LjlllljL[lllIL1jiLl0]>LjlllljL[jj0IoLloIol0lI])
+elseif jLi1I0o110==15 then
+LjlllljL[l0l1ioLli0L]={}
+elseif jLi1I0o110==8 then
+LjlllljL[l0l1ioLli0L]=LjlllljL[lllIL1jiLl0][1]
+elseif jLi1I0o110==36 then
+local liL1i00LoI=LjlllljL[l0l1ioLli0L]
+if iO1oOl0i0l(liL1i00LoI)~=lj0jjlljLOjo0j then
+local Ll0I0L1lI=iljoOIljL(liL1i00LoI)
+if Ll0I0L1lI~=nil and iO1oOl0i0l(Ll0I0L1lI)~=jLo0IijoO0 then II1iLOL1iIO("Protected iterator metatables require an explicit iterator function",0) end
+local IILoj0l0=Ll0I0L1lI and I0ioO1OOl(Ll0I0L1lI,LOOLO00i1j)
+if IILoj0l0~=nil then
+LjlllljL[l0l1ioLli0L],LjlllljL[l0l1ioLli0L+1],LjlllljL[l0l1ioLli0L+2]=IILoj0l0(liL1i00LoI)
+elseif iO1oOl0i0l(liL1i00LoI)==jLo0IijoO0 and (Ll0I0L1lI==nil or I0ioO1OOl(Ll0I0L1lI,lOojlo100)==nil) then
+LjlllljL[l0l1ioLli0L],LjlllljL[l0l1ioLli0L+1],LjlllljL[l0l1ioLli0L+2]=I1010lo,liL1i00LoI,nil
+end
+end
+elseif jLi1I0o110==25 then
+local liL1i00LoI,Ll0I0L1lI=LjlllljL[lllIL1jiLl0],LjlllljL[jj0IoLloIol0lI];LjlllljL[l0l1ioLli0L]=liL1i00LoI..Ll0I0L1lI
+elseif jLi1I0o110==14 then
+LjlllljL[l0l1ioLli0L+1]=LjlllljL[lllIL1jiLl0]; LjlllljL[l0l1ioLli0L]=LjlllljL[lllIL1jiLl0][LjlllljL[jj0IoLloIol0lI]]
+elseif jLi1I0o110==13 then
+LjlllljL[l0l1ioLli0L]=(LjlllljL[lllIL1jiLl0]==LjlllljL[jj0IoLloIol0lI])
+elseif jLi1I0o110==21 then
+LjlllljL[l0l1ioLli0L]=LjlllljL[lllIL1jiLl0]^LjlllljL[jj0IoLloIol0lI]
+elseif jLi1I0o110==18 then
+for liL1i00LoI=l0l1ioLli0L,l0l1ioLli0L+lllIL1jiLl0 do LjlllljL[liL1i00LoI]=nil end
+elseif jLi1I0o110==2 then
+LjlllljL[l0l1ioLli0L]=#LjlllljL[lllIL1jiLl0]
+elseif jLi1I0o110==11 then
+local Ll0I0L1lI=LjlllljL[l0l1ioLli0L]
+local IILoj0l0
+if lllIL1jiLl0==0 then IILoj0l0=lILi1IilOool-l0l1ioLli0L-1 else IILoj0l0=lllIL1jiLl0-1 end
+local j1oIloO1jj={}
+for liL1i00LoI=1,IILoj0l0 do j1oIloO1jj[liL1i00LoI]=LjlllljL[l0l1ioLli0L+liL1i00LoI] end
+local IlojLO1iOlLoLI=Lj01oI1oLOiOjI(Ll0I0L1lI(iiooLiOjj(j1oIloO1jj,1,IILoj0l0)))
+if jj0IoLloIol0lI==0 then
+local j0IoOIl11=IlojLO1iOlLoLI.n
+for liL1i00LoI=1,j0IoOIl11 do LjlllljL[l0l1ioLli0L+liL1i00LoI-1]=IlojLO1iOlLoLI[liL1i00LoI] end
+lILi1IilOool=l0l1ioLli0L+j0IoOIl11
+else
+for liL1i00LoI=1,jj0IoLloIol0lI-1 do LjlllljL[l0l1ioLli0L+liL1i00LoI-1]=IlojLO1iOlLoLI[liL1i00LoI] end
+end
+elseif jLi1I0o110==39 then
+local Ll0I0L1lI=LjlllljL[l0l1ioLli0L]
+local l10LLIooio0=LjlllljL[l0l1ioLli0L+1]
+local ijOlll1Ioj1o=LjlllljL[l0l1ioLli0L+2]
+local IlojLO1iOlLoLI=Lj01oI1oLOiOjI(Ll0I0L1lI(l10LLIooio0,ijOlll1Ioj1o))
+local j0IoOIl11=IlojLO1iOlLoLI[1]
+if j0IoOIl11~=nil then
+LjlllljL[l0l1ioLli0L+2]=j0IoOIl11
+for liL1i00LoI=1,lllIL1jiLl0 do LjlllljL[l0l1ioLli0L+3+liL1i00LoI-1]=IlojLO1iOlLoLI[liL1i00LoI] end
+LI1Ojoj=jj0IoLloIol0lI+1
+end
+elseif jLi1I0o110==19 then
+local liL1i00LoI=L01jLI1L10(lii0OiOioO1,llI1iL1OL,lllIL1jiLl0+1,lo1Ijo10[9]);LjlllljL[l0l1ioLli0L]=liL1i00LoI
+elseif jLi1I0o110==17 then
+local liL1i00LoI,Ll0I0L1lI,IILoj0l0=LjlllljL[l0l1ioLli0L],LjlllljL[lllIL1jiLl0],LjlllljL[jj0IoLloIol0lI];liL1i00LoI[Ll0I0L1lI]=IILoj0l0
+elseif jLi1I0o110==41 then
+LjlllljL[l0l1ioLli0L]={LjlllljL[lllIL1jiLl0]}
+elseif jLi1I0o110==34 then
+LjlllljL[l0l1ioLli0L]=liOLI11[lllIL1jiLl0+1][1]
+elseif jLi1I0o110==44 then
+local liL1i00LoI,Ll0I0L1lI=LjlllljL[lllIL1jiLl0],LjlllljL[jj0IoLloIol0lI];LjlllljL[l0l1ioLli0L]=liL1i00LoI/Ll0I0L1lI
+elseif jLi1I0o110==28 then
+LjlllljL[l0l1ioLli0L]=(LjlllljL[lllIL1jiLl0]~=LjlllljL[jj0IoLloIol0lI])
+elseif jLi1I0o110==32 then
+local IILoj0l0
+if lllIL1jiLl0==0 then IILoj0l0=lILi1IilOool-l0l1ioLli0L-1 else IILoj0l0=lllIL1jiLl0 end
+local Ll0I0L1lI=LjlllljL[l0l1ioLli0L]
+for liL1i00LoI=1,IILoj0l0 do Ll0I0L1lI[jj0IoLloIol0lI+liL1i00LoI]=LjlllljL[l0l1ioLli0L+liL1i00LoI] end
+elseif jLi1I0o110==1 then
+LjlllljL[l0l1ioLli0L]=LjlllljL[lllIL1jiLl0][LjlllljL[jj0IoLloIol0lI]]
+elseif jLi1I0o110==27 then
+LjlllljL[l0l1ioLli0L]=LjlllljL[lllIL1jiLl0]-LjlllljL[jj0IoLloIol0lI]
+elseif jLi1I0o110==43 then
+LjlllljL[l0l1ioLli0L]=LjlllljL[lllIL1jiLl0]
+elseif jLi1I0o110==40 then
+LjlllljL[l0l1ioLli0L]=LjlllljL[l0l1ioLli0L]+LjlllljL[l0l1ioLli0L+2]
+local Ll0I0L1lI=LjlllljL[l0l1ioLli0L+2]
+local IILoj0l0
+if Ll0I0L1lI>0 then IILoj0l0=LjlllljL[l0l1ioLli0L]<=LjlllljL[l0l1ioLli0L+1] else IILoj0l0=LjlllljL[l0l1ioLli0L]>=LjlllljL[l0l1ioLli0L+1] end
+if IILoj0l0 then LjlllljL[l0l1ioLli0L+3]=LjlllljL[l0l1ioLli0L]; LI1Ojoj=lllIL1jiLl0+1 end
+elseif jLi1I0o110==9 then
+for liL1i00LoI=l0l1ioLli0L,l0l1ioLli0L+2 do
+LjlllljL[liL1i00LoI]=l0lL1jLjLLo(LjlllljL[liL1i00LoI])
+if LjlllljL[liL1i00LoI]==nil then II1iLOL1iIO("Numeric for bounds and step must be numbers",0) end
+end
+local Ll0I0L1lI=LjlllljL[l0l1ioLli0L+2]
+local IILoj0l0
+if Ll0I0L1lI>0 then IILoj0l0=LjlllljL[l0l1ioLli0L]<=LjlllljL[l0l1ioLli0L+1] else IILoj0l0=LjlllljL[l0l1ioLli0L]>=LjlllljL[l0l1ioLli0L+1] end
+if IILoj0l0 then LjlllljL[l0l1ioLli0L+3]=LjlllljL[l0l1ioLli0L] else LI1Ojoj=lllIL1jiLl0+1 end
+elseif jLi1I0o110==7 then
+local liL1i00LoI,Ll0I0L1lI=LjlllljL[lllIL1jiLl0],LjlllljL[jj0IoLloIol0lI];LjlllljL[l0l1ioLli0L]=liL1i00LoI*Ll0I0L1lI
+elseif jLi1I0o110==30 then
+local Ll0I0L1lI=iloIi1O[lllIL1jiLl0+1]
+local j1oIloO1jj={}
+local IlojLO1iOlLoLI=Ll0I0L1lI[6]
+for liL1i00LoI=1,#IlojLO1iOlLoLI do
+local j0IoOIl11=IlojLO1iOlLoLI[liL1i00LoI]
+if j0IoOIl11[1]==1 then j1oIloO1jj[liL1i00LoI]=LjlllljL[j0IoOIl11[2]] else j1oIloO1jj[liL1i00LoI]=liOLI11[j0IoOIl11[2]+1] end
+end
+LjlllljL[l0l1ioLli0L]=ji1jLO(Ll0I0L1lI,j1oIloO1jj)
+elseif jLi1I0o110==20 then
+local liL1i00LoI,Ll0I0L1lI=LjlllljL[lllIL1jiLl0],LjlllljL[jj0IoLloIol0lI];LjlllljL[l0l1ioLli0L]=liL1i00LoI//Ll0I0L1lI
+else II1iLOL1iIO() end
+end
+return I0il0Ii0li
+end
+return LIi110ll0li(lo1Ijo10,{},Lj01oI1oLOiOjI(...))
